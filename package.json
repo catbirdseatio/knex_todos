@@ -1,0 +1,22 @@
+{
+  "name": "knex-todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "migrate": "knex migrate:latest --knexfile db/knexfile.cjs",
+    "test": "knex migrate:latest --knexfile db/knexfile.cjs --env test; npx ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "knex": "^2.4.1",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "ava": "^5.1.1"
+  }
+}
